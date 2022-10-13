@@ -1,0 +1,123 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3544,        113]
+NotebookOptionsPosition[      2939,         94]
+NotebookOutlinePosition[      3372,        111]
+CellTagsIndexPosition[      3329,        108]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"eq1", " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["\[Omega]", "l"], " ", "+", " ", 
+       SubscriptBox["\[Omega]", "r"]}], 
+      RowBox[{
+       SubscriptBox["\[Omega]", "r"], " ", "-", " ", 
+       SubscriptBox["\[Omega]", "l"]}]], "*", " ", 
+     FractionBox["d", "2"]}], " ", "==", " ", 
+    FractionBox[
+     RowBox[{"ld", " ", "*", " ", 
+      RowBox[{"Cos", "[", "\[Alpha]", "]"}]}], 
+     RowBox[{"Sin", "[", 
+      RowBox[{"2", " ", "\[Alpha]"}], "]"}]]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"eq2", " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["\[Omega]", "l"], " ", "+", " ", 
+       SubscriptBox["\[Omega]", "r"]}], "2"], "*", "r"}], " ", "==", " ", 
+    "vlin"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.8744889173207736`*^9, 3.8744890425776176`*^9}, {
+  3.8744898776643977`*^9, 3.8744898828077097`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"603486c4-b477-4742-b067-d03e58d4cf27"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "@", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"eq1", ",", " ", "eq2"}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      SubscriptBox["\[Omega]", "l"], " ", ",", " ", 
+      SubscriptBox["\[Omega]", "r"]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8744890449306345`*^9, 3.874489084922207*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"1239a4fa-52c8-4645-9822-cd5cada06c17"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Omega]", "l"], "\[Rule]", 
+     FractionBox[
+      RowBox[{"vlin", " ", 
+       RowBox[{"(", 
+        RowBox[{"ld", "-", 
+         RowBox[{"d", " ", 
+          RowBox[{"Sin", "[", "\[Alpha]", "]"}]}]}], ")"}]}], 
+      RowBox[{"ld", " ", "r"}]]}], ",", 
+    RowBox[{
+     SubscriptBox["\[Omega]", "r"], "\[Rule]", 
+     FractionBox[
+      RowBox[{"vlin", " ", 
+       RowBox[{"(", 
+        RowBox[{"ld", "+", 
+         RowBox[{"d", " ", 
+          RowBox[{"Sin", "[", "\[Alpha]", "]"}]}]}], ")"}]}], 
+      RowBox[{"ld", " ", "r"}]]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8744890779828825`*^9, 3.8744890858360567`*^9}, 
+   3.874489887663293*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"94ec4956-fcae-4ed8-9e2d-076f0dbc8eb1"]
+}, Open  ]]
+},
+WindowSize->{573, 627},
+WindowMargins->{{
+  391.79999999999995`, Automatic}, {-0.599999999999909, Automatic}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"dcb0373a-b880-4dff-8ab6-b8f129f15732"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1054, 30, 83, "Input",ExpressionUUID->"603486c4-b477-4742-b067-d03e58d4cf27"],
+Cell[CellGroupData[{
+Cell[1637, 54, 455, 11, 28, "Input",ExpressionUUID->"1239a4fa-52c8-4645-9822-cd5cada06c17"],
+Cell[2095, 67, 828, 24, 97, "Output",ExpressionUUID->"94ec4956-fcae-4ed8-9e2d-076f0dbc8eb1"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
