@@ -1,0 +1,16 @@
+function traj_d = circle(a,b,r, theta0, dtheta_des, dt, i_start, i_stop)
+%UNTITLED Summary of this function goes here
+%   Detailed explanation goes here
+
+theta = zeros(1, i_stop - i_start);
+for t=0:300
+    theta(t) = theta0 + dtheta_des * (t*dt);
+end
+
+x = a + r*cos(theta);
+y = b + r*sin(theta);
+t = zeros(size(x));
+
+traj_d = [x; y; theta];
+
+end
